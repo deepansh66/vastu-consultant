@@ -6,11 +6,9 @@ function Footer() {
 
       <div className="footer-container">
 
-        {/* BRAND */}
+          
         <div className="footer-section">
-          <h2 className="logo-text">
-            <span className="eco">Eco</span>Vastu Spaces
-          </h2>
+          <h2 className="logo-text">EcoVastu Spaces</h2>
           <p>
             Bringing balance, positivity, and harmony to your spaces 
             through expert Vastu solutions.
