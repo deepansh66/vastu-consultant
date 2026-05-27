@@ -29,7 +29,7 @@ function Register() {
     try{
       const response =
       await axios.post(
-        "http://localhost:5000/api/otp/send-otp",
+        "https://vastu-consultant.onrender.com/api/otp/send-otp",
         { phone:`+91${formData.phone}`}
       );
       alert(response.data.message);
@@ -43,7 +43,7 @@ function Register() {
     try{
       const response =
       await axios.post(
-        "http://localhost:5000/api/otp/verify-otp",
+        "https://vastu-consultant.onrender.com/api/otp/verify-otp",
         {
           phone:`+91${formData.phone}`,
           otp
@@ -76,7 +76,7 @@ function Register() {
     try{
       const response =
       await axios.post(
-        "http://localhost:5000/api/auth/register",
+        "https://vastu-consultant.onrender.com/api/auth/register",
         formData
       );
       alert(response.data.message);

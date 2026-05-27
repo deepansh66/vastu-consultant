@@ -9,7 +9,7 @@ function Appointment() {
   try{
     const { data } =
     await axios.post(
-      "http://localhost:5000/api/payment/create-order",
+      "https://vastu-consultant.onrender.com/api/payment/create-order",
       {
         amount:1000
       }
@@ -24,7 +24,7 @@ function Appointment() {
       handler:async function(response){
   try{
     await axios.post(
-      "http://localhost:5000/api/appointment",
+      "https://vastu-consultant.onrender.com/api/appointment",
       formData
     );
     alert(
@@ -73,7 +73,7 @@ function Appointment() {
   e.preventDefault();
   try{
     const response = await axios.post(
-      "http://localhost:5000/api/appointment",
+      "https://vastu-consultant.onrender.com/api/appointment",
       formData
     );
     alert(response.data.message);

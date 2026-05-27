@@ -22,7 +22,7 @@ const [formData,setFormData] =
     try{
       const response =
       await axios.post(
-        "http://localhost:5000/api/contact",
+        "https://vastu-consultant.onrender.com/api/contactus", 
         formData
       );
       alert(response.data.message);
