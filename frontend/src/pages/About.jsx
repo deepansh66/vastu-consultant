@@ -21,12 +21,12 @@ export default function EcoVastuAbout() {
     elements.forEach((el) => {
       observer.observe(el);
     });
-  }, []);  
+  }, []);
   return (
     <>
       <section className="eco-about">
         {/* HERO */}
-        <section className="hero reveal">
+        <section className="about-hero-section reveal">
           <div className="hero-left">
             <h1>
               Spaces designed with

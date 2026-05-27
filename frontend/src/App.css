@@ -7,23 +7,17 @@
   --teal-700: #0f766e;
   --teal-500: #14b8a6;
   --cyan-400: #22d3ee;
-
   --purple-600: #7c3aed;
   --purple-400: #a78bfa;
-
   --dark-900: #020617;
   --dark-800: #0f172a;
-
   --text-main: #0f172a;
   --text-light: #e2e8f0;
-
   --bg-light: #f8fafc;
 }
 body {
   font-family: 'Poppins', sans-serif;
 }
-
-/* COLOR SYSTEM */
 :root {
   --primary: #187f8f;
   --secondary: #22c1c3;
@@ -62,17 +56,9 @@ body {
   gap: 40px;
   flex-wrap: wrap;
 }
-
-/* 🔥 PROPER BOX */
-/* =========================
-   PRE + POST CONSTRUCTION
-========================= */
-
 .split-wrapper {
   width: 100%;
 }
-
-/* MAIN SECTION */
 .split-section {
   width: 100%;
   background-color:#f0e2a4;
@@ -83,34 +69,12 @@ body {
   position: relative;
   overflow: visible;
 }
-
-/* POST SECTION */
-/* .post-section {
-  background:
-    radial-gradient(circle at top right,
-      rgba(20,184,166,0.10),
-      transparent 30%),
-
-    radial-gradient(circle at bottom left,
-      rgba(200,155,71,0.10),
-      transparent 30%),
-
-    linear-gradient(
-      135deg,
-      #fffdf8,
-      #f5f0e8
-    );
-} */
-
-/* CONTENT */
 .split-block {
   width: 100%;
   max-width: 1400px;
   margin-top: 80px;
   position: relative;
 }
-
-/* RIGHT SIDE ALIGN */
 .post-block {
   display: flex;
   flex-direction: column;
@@ -118,8 +82,6 @@ body {
   text-align: left;
   z-index: 2;
 }
-
-/* LABEL */
 .phase {
   color: #b88932;
   font-size: 14px;
@@ -128,8 +90,6 @@ body {
   font-weight: 700;
   margin-bottom: 25px;
 }
-
-/* HEADING */
 .split-title {
   font-size: 60px;
   line-height: 1;
@@ -139,12 +99,9 @@ body {
   margin-bottom: 15px;
   max-width: 900px;
 }
-
 .split-title span {
   color: #b88932;
 }
-
-/* DESCRIPTION */
 .split-desc {
   font-size: 24px;
   line-height: 1.8;
@@ -153,8 +110,6 @@ body {
   margin-bottom: 45px;
   font-family: Arial, Helvetica, sans-serif;
 }
-
-/* BUTTON */
 .dropdown-btn {
   background:
     linear-gradient(
@@ -174,14 +129,10 @@ body {
   box-shadow:0 12px 30px rgba(200,155,71,0.25);
   margin-bottom: 60px;
 }
-
 .dropdown-btn:hover {
   transform: translateY(-4px);
   box-shadow:0 18px 40px rgba(200,155,71,0.35);
 }
-
-/* DROPDOWN CONTAINER */
-/* DROPDOWN GRID */
 
 .dropdown-content{
   width:100%;
@@ -190,18 +141,12 @@ body {
   gap:25px;
   margin-top:10px;
 }
-
-/* LINK */
-
 .dropdown-link{
   text-decoration:none;
   color:inherit;
   display:block;
   height:100%;
 }
-
-/* CARD */
-
 .dropdown-item{
   background:rgba(255,255,255,0.78);
   border:1px solid rgba(184,137,50,0.15);
@@ -214,16 +159,10 @@ body {
   box-shadow:0 10px 30px rgba(0,0,0,0.06);
   transition:0.3s ease;
 }
-
-/* HOVER */
-
 .dropdown-item:hover{
   transform:translateY(-6px);
   box-shadow:0 20px 40px rgba(0,0,0,0.10);
 }
-
-/* HEADING */
-
 .dropdown-item h3{
   color:#111827;
   font-size:24px;
@@ -231,88 +170,62 @@ body {
   margin-bottom:18px;
   font-family:"Times New Roman",serif;
 }
-
-/* PARAGRAPH */
-
 .dropdown-item p{
   color:#4b5563;
   line-height:1.8;
   font-size:15px;
 }
-
 /* RESPONSIVE */
-
 @media(max-width:1200px){
-
   .dropdown-content{
     grid-template-columns:
       repeat(2,1fr);
   }
 }
-
 @media(max-width:768px){
-
   .dropdown-content{
     grid-template-columns:1fr;
   }
-
   .dropdown-item{
     min-height:auto;
   }
 }
-/* ANIMATION */
 @keyframes fadeIn {
-
   from {
     opacity: 0; 
     transform: translateY(-10px);
   }
-
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
-
-/* =========================
-   RESPONSIVE
-========================= */
-
 @media (max-width: 1200px) {
 .split-title {
     font-size: 72px;
   }
-
   .split-desc {
     font-size: 21px;
   }
 }
-
 @media (max-width: 768px) {
-
   .split-section {
     padding: 80px 6%;
   }
   .split-title {
     font-size: 52px;
-
     line-height: 1.1;
   }
-
   .split-desc {
     font-size: 17px;
-
     line-height: 1.7;
   }
-
   .dropdown-btn {
     width: 100%;
   }
-
   .dropdown-content {
     flex-direction: column;
   }
-
   .dropdown-item {
     width: 100%;
     text-align: center;
@@ -321,24 +234,18 @@ body {
   .dropdown-link{
   text-decoration:none;
 }
-
   .post-block {
     align-items: flex-start;
-
     text-align: left;
   }
 }
-
 @media (max-width: 480px) {
-
   .split-title {
     font-size: 40px;
   }
-
   .split-desc {
     font-size: 15px;
   }
-
   .phase {
     letter-spacing: 3px;
   }
@@ -348,37 +255,31 @@ body {
   align-items: center;
   gap: 10px;
 }
-
 .logo-img {
   width: 50px;
   margin-left: -100px;
 }
-
 .logo-text {
   font-size: 22px;
   margin-top: 10px;
   font-weight: 600;
   color: #f9fcfc; 
 }
-
 .nav-menu {
   display: flex; 
   gap: 30px;
 }
-
 .hamburger {
   display: none;
   font-size: 28px;
   cursor: pointer;
 }
-
 .nav-link {
   color: white;
   text-decoration: none;
   position:relative;
   font-size: 18px;
 }
-
 .nav-link.active {
   color: white;
 } 
@@ -388,13 +289,10 @@ body {
 .nav-link:hover {
   color: rgb(4, 4, 4); 
 }
-
 @media (max-width: 768px) {
-
   .hamburger {
     display: block;
   }
-
   .nav-menu {
     position: absolute;
     top: 70px;
@@ -406,11 +304,9 @@ body {
     display: none;
     padding: 20px 0;
   }
-
   .nav-menu.active {
     display: flex;
   }
-
   .nav-link {
     margin: 10px 0;
     font-size: 20px;
@@ -422,8 +318,6 @@ body {
   font-weight: 600;
   letter-spacing: 1px;
 }
-/* MAIN SECTION */
-
 .appointment-section{
   position:relative;
   overflow:hidden;
@@ -434,8 +328,8 @@ body {
   align-items:center;
   background-image:
   linear-gradient(
-    rgba(79, 79, 77, 0.72),
-    rgba(34, 34, 33, 0.72)
+ rgba(255,255,255,0.88),
+ rgba(255,255,255,0.88)
   ),
   url("https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=2070&auto=format&fit=crop");
   background-size:cover;
@@ -443,15 +337,11 @@ body {
   background-repeat:no-repeat;
   background-attachment:fixed;
 }
-
-/* LEFT SIDE */
-
 .appointment-left {
   flex: 1;
-
+  backdrop-filter:blur(3px);
   min-width: 320px;
 }
-
 .appointment-tag {
   color: #b88932;
   letter-spacing: 4px;
@@ -459,7 +349,6 @@ body {
   font-weight: 700;
   margin-bottom: 22px;
 }
-
 .appointment-left h1 {
   font-size: 72px;
   line-height: 1.05;
@@ -467,27 +356,21 @@ body {
   margin-bottom: 28px;
   font-family: arial;
 }
-
 .appointment-left h1 span {
   color: #b88932; 
 }
-
 .appointment-description {
   font-size: 19px;
   line-height: 1.9;
-  color: #030303;
+  color: #1F2937;
   max-width: 650px;
   margin-bottom: 40px;
 }
-
-/* FEATURES */
-
 .appointment-features {
   display: flex;
   flex-wrap: wrap;
   gap: 18px;
 }
-
 .feature-box {
   background: rgba(255,255,255,0.7);
   border:1px solid rgba(184,137,50,0.18);
@@ -497,16 +380,10 @@ body {
   font-weight: 600;
   box-shadow:0 5px 20px rgba(0,0,0,0.05);
 }
-
-/* RIGHT SIDE */
-
 .appointment-right {
   flex: 1;
   min-width: 320px;
 }
-
-/* FORM */
-
 .appointment-form {
   background: rgba(255,255,255,0.82);
   backdrop-filter: blur(10px);
@@ -518,7 +395,6 @@ body {
   flex-direction: column;
   gap: 22px;
 }
-
 .appointment-form h2 {
   color: #111827;
   margin-bottom: 10px;
@@ -526,9 +402,6 @@ body {
   font-size: 32px;
   font-family: Arial;
 }
-
-/* INPUTS */
-
 .appointment-form input,
 .appointment-form select {
   width: 100%;
@@ -540,7 +413,6 @@ body {
   outline: none;
   transition: 0.3s ease;
 }
-
 .appointment-form input:focus,
 .appointment-form select:focus {
   border-color: #b88932;

@@ -243,7 +243,7 @@ STATS SECTION
   font-family:"Times New Roman", serif;
 }
 .stat-box p{
-  color:#ecf0f6 !important;
+  color:black;
   font-size:18px;
   line-height:1.7;
 }
