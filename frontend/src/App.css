@@ -40,7 +40,7 @@ body {
 .nav-link:hover {
   color: var(--purple-400);
 }
-.nav-link::after {
+/* .nav-link::after {
   content: "";
   width: 0%;
   height: 2px;
@@ -49,6 +49,12 @@ body {
   bottom: -5px;
   left: 0;
   transition: 0.3s;
+} */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
 }
 .vastu-grid {
   display: flex;
@@ -133,7 +139,6 @@ body {
   transform: translateY(-4px);
   box-shadow:0 18px 40px rgba(200,155,71,0.35);
 }
-
 .dropdown-content{
   width:100%;
   display:grid;
@@ -259,11 +264,13 @@ body {
   width: 50px;
   margin-left: -100px;
 }
-.logo-text {
-  font-size: 22px;
-  margin-top: 10px;
-  font-weight: 600;
-  color: #f9fcfc; 
+.navbar-logo-text{
+  font-size:32px;
+  color:#FAFAF7;
+  font-weight:600;
+  letter-spacing:1px;
+  font-family:"Playfair Display",serif;
+  line-height:1;
 }
 .nav-menu {
   display: flex; 
@@ -312,12 +319,6 @@ body {
     font-size: 20px;
   }
 }
-.logo-text {
-  font-family: arial !important;
-  font-size: 44px;
-  font-weight: 600;
-  letter-spacing: 1px;
-}
 .appointment-section{
   position:relative;
   overflow:hidden;
@@ -328,8 +329,8 @@ body {
   align-items:center;
   background-image:
   linear-gradient(
- rgba(255,255,255,0.88),
- rgba(255,255,255,0.88)
+ rgba(94, 91, 91, 0.88),
+ rgba(132, 129, 129, 0.88)
   ),
   url("https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=2070&auto=format&fit=crop");
   background-size:cover;

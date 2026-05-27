@@ -138,8 +138,8 @@ export default function EcoVastuAbout() {
         <section className="pillars reveal">
           <div className="pillars-top">
             <h2>Built around clarity, continuity, and responsibility.</h2>
-            <p>Har project ek structured framework ke saath execute hota hai — jahan communication clear rahe aur design decisions aligned rahein.
-</p>
+            <p>“Every project is executed within a structured framework
+               — where communication stays clear and design decisions remain aligned.”</p>
 
           </div>
 
@@ -162,16 +162,11 @@ export default function EcoVastuAbout() {
               </h3>
 
               <p>
-                No referrals. No outsourced layers. Planning aur execution ek hi integrated structure ke andar rehte hain.
+              “No referrals. No outsourced layers. Planning and execution remain within one integrated structure.”
               </p>
-
             </div>
-
-
             <div className="pillar-card">
-
               <div className="small-corner"></div>
-
               <div className="icon-box">
                 <svg width="30" height="30" fill="none" stroke="#C9A96E" strokeWidth="1.5">
                   <circle cx="15" cy="15" r="10"/>
@@ -187,7 +182,7 @@ export default function EcoVastuAbout() {
               </h3>
 
               <p>
-                Fees aur scope pehle discuss kiye jaate hain. Hidden charges ya commission-based recommendations nahi hoti.
+                “Fees and scope are discussed upfront. No hidden charges or commission-based recommendations.”
               </p>
 
             </div>
@@ -212,7 +207,7 @@ export default function EcoVastuAbout() {
               </h3>
 
               <p>
-                Barnala, Ludhiana, Tricity aur pan-India virtual consultations — har format mein structured guidance.
+                Barnala, Ludhiana, Tricity, and pan-India virtual consultations — structured guidance across every format.
               </p>
 
             </div>
@@ -237,12 +232,13 @@ export default function EcoVastuAbout() {
             </h2>
 
             <p>
-              Traditional projects mein vastu consultant, architect aur interior designer alag-alag direction mein kaam karte hain. Result — confusion, redesigns, compromises.
+              “In traditional projects, the Vastu consultant, architect, 
+              and interior designer often work in different directions.
+              The result — confusion, redesigns, and compromises.”
             </p>
 
             <p>
-              EcoVastu Spaces mein hum ek collective system ki tarah kaam karte hain — jahan every stage connected rehta hai.
-            </p>
+              “At EcoVastu Spaces, we work as a collective system — where every stage remains connected.”            </p>
 
           </div>
 
@@ -253,7 +249,7 @@ export default function EcoVastuAbout() {
               <div className="dot"></div>
               <h4>One Conversation</h4>
               <p>
-                Har decision ek integrated perspective ke saath liya jaata hai.
+              Every decision is made with an integrated perspective.
               </p>
             </div>
 
@@ -261,7 +257,7 @@ export default function EcoVastuAbout() {
               <div className="dot"></div>
               <h4>Senior Oversight</h4>
               <p>
-                Junior handoffs ya fragmented communication systems nahi.
+                No junior handoffs or fragmented communication systems.
               </p>
             </div>
 
@@ -269,7 +265,7 @@ export default function EcoVastuAbout() {
               <div className="dot"></div>
               <h4>Structured Guidance</h4>
               <p>
-                Contractor-ready recommendations clear documentation ke saath.
+                Contractor-ready recommendations with clear documentation.
               </p>
             </div>
 
@@ -277,7 +273,7 @@ export default function EcoVastuAbout() {
               <div className="dot"></div>
               <h4>Long-Term Thinking</h4>
               <p>
-                Har planning decision occupancy ke baad ke years ko dhyan mein rakh kar liya jaata hai.
+                Every planning decision is made while keeping the years after occupancy in mind.
               </p>
             </div>
 
@@ -302,7 +298,8 @@ export default function EcoVastuAbout() {
           </h2>
 
           <p className="closing-text">
-            Hum pehle space ko samajhte hain — phir recommend karte hain ki kya practical hai, kya avoid karna chahiye, aur kya long-term mein kaam karega.
+            We first understand the space — then recommend what is practical, what should be avoided, and what will work effectively in the long term.
+
           </p>
 
           <div className="cta-row">

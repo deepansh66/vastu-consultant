@@ -12,7 +12,7 @@ function Navbar() {
       {/* LEFT */}
       <div className="nav-left"> 
         <img src={logo} alt="logo" className="logo-img" />
-        <h2 className="logo-text">EcoVastu Spaces</h2>
+        <div className="logo-text">EcoVastu Spaces</div>
       </div>
 
       {/* HAMBURGER */}

@@ -137,10 +137,10 @@ function Services() {
         </p>
       </div>
       <blockquote className="service-quote">
-        “Construction chal rahi hai aur
-        sab kuch clarity ke saath ho raha
-        hai — aage jaake final result
-        dekhne ka wait hai.”
+        “Construction is in progress, 
+        and everything is moving forward 
+        with complete clarity — now we’re 
+        looking forward to seeing the final result.”
         <span>
           — Bhushan Goyal, Barnala
         </span>

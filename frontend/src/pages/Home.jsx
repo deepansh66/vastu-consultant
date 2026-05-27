@@ -358,7 +358,6 @@ function Home() {
     Just tell us about your space —
     we will tell you what is possible.
   </p>
-
   <a href="https://wa.me/917710788800" target="_blank">
   Talk to us on WhatsApp →
   </a>
@@ -370,16 +369,12 @@ function Home() {
     </div>
   </section>
 </section>
-</div> <section className="visual-section">
+</div> 
+<section className="visual-section">
   <div className="visual-left">
   <br></br> 
   </div>
 </section>
-      <section className="expertise-section">
-  <div className="expertise-left">
-</div>  
-</section>
-
     </div>
   );
 }

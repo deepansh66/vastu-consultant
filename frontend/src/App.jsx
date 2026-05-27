@@ -7,6 +7,7 @@ import FAQ from "./pages/FAQ";
 import About from "./pages/About";
 import ContactUs from "./pages/ContactUs";
 import Home from "./pages/Home";
+import Blog from "./pages/Blog";
 import Register from "./pages/Register";
 import Services from "./pages/Services";
 import Appointment from "./pages/Appointment";
@@ -38,6 +39,7 @@ function App() {
         <Route path="/admin"element={<AdminDashboard />} />
         <Route path="/register" element={<Register />} />
         <Route path="/aboutus" element={<About />} /> 
+        <Route path="/blog" element={<Blog />} />
         <Route path="/contactus" element={<ContactUs />} />
         <Route path="/appointment" element={<Appointment />} />
         <Route path="/login" element={<Login />} />

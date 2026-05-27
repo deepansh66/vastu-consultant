@@ -5,113 +5,54 @@ function Footer() {
 
   return (
 
-    <footer className="footer">
+    <footer className="footer-container-main">
 
-      {/* TOP */}
-
-      <div className="footer-top">
+      <div className="footer-content-wrapper">
 
         {/* LEFT */}
 
-        <div className="footer-brand">
+        <div className="footer-brand-section">
 
-          <h2>
+          <div className="footer-brand-name">
             EcoVastu Spaces
-          </h2>
+          </div>
 
-          <p>
-            Rooted in Wisdom, Styled for Today.
-            We integrate Vastu, Architecture,
-            and Interior Planning into one
-            unified consultation system.
+          <p className="footer-brand-tagline">
+
+            Rooted in Wisdom,
+            Styled for Today.
+
           </p>
 
         </div>
 
-        {/* LINKS */}
+        {/* CENTER */}
 
-        <div className="footer-links">
+        <div className="footer-links-section">
 
-          <h3>
-            Quick Links
-          </h3>
+          <a href="/">Home</a>
 
-          <a href="/">
-            Home
-          </a>
+          <a href="/aboutus">About</a>
 
-          <a href="/about">
-            About
-          </a>
+          <a href="/services">Services</a>
 
-          <a href="/services">
-            Services
-          </a>
+          <a href="/blog">Blog</a>
 
-          <a href="/blog">
-            Blog
-          </a>
-
-          <a href="/contactus">
-            Contact
-          </a>
+          <a href="/contactus">Contact</a>
 
         </div>
 
-        {/* SERVICES */}
+        {/* RIGHT */}
 
-        <div className="footer-links">
+        <div className="footer-contact-section">
 
-          <h3>
-            Services
-          </h3>
-
-          <a href="#">
-            Residential Vastu
-          </a>
-
-          <a href="#">
-            Commercial Vastu
-          </a>
-
-          <a href="#">
-            Architecture Planning
-          </a>
-
-          <a href="#">
-            Interior Consultation
-          </a>
-
-        </div>
-
-        {/* CONTACT */}
-
-        <div className="footer-contact">
-
-          <h3>
-            Contact
-          </h3>
-
-          <p>
-            Punjab, India
-          </p>
-
-          <p>
+          <span>
             +91 77107 88800
-          </p>
+          </span>
 
-          <p>
+          <span>
             ecovastuspaces@gmail.com
-          </p>
-
-          <a
-            href="https://wa.me/917710788800"
-            target="_blank"
-            rel="noreferrer"
-            className="footer-whatsapp"
-          >
-            WhatsApp Us
-          </a>
+          </span>
 
         </div>
 
@@ -119,12 +60,11 @@ function Footer() {
 
       {/* BOTTOM */}
 
-      <div className="footer-bottom">
+      <div className="footer-copyright">
 
-        <p>
-          © 2026 EcoVastu Spaces.
-          All Rights Reserved.
-        </p>
+        <span>
+          © 2026 EcoVastu Spaces
+        </span>
 
       </div>
 

@@ -105,7 +105,6 @@
   color: #555;
   line-height: 1.7;
 }
-
 .explore-btn {
   padding: 10px 25px;
   background: linear-gradient(45deg, #4CAF50, #FFD700);
@@ -114,13 +113,11 @@
   border-radius: 25px;
   cursor: pointer;
 }
-
 .visual-right {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 15px;
 }
-
 .visual-right img {
   width: 100%;
   border-radius: 12px;
@@ -176,16 +173,10 @@
     padding: 30px 20px;
   } 
 }
-/* =======================================================
-GLOBAL
-======================================================= */
 body{
   overflow-x:hidden;
   background:#f8f5ef;
 }
-/* =======================================================
-COMMON
-======================================================= */
 .section-heading{
   max-width:900px;
   margin:0 auto 70px;
@@ -210,9 +201,6 @@ COMMON
   line-height:1.8;
   color:#6b7280;
 }
-/* =======================================================
-STATS SECTION
-======================================================= */
 .stats-section{
   width:100%;
   display:grid;
@@ -224,18 +212,16 @@ STATS SECTION
   box-sizing:border-box;
 }
 .stat-box{
-  background:
-  rgba(255,255,255,0.04);
-  border:
-  1px solid rgba(255,255,255,0.06);
+  background:white;
+  border:1px solid rgba(255,255,255,0.06);
   border-radius:28px;
   padding:55px 30px;
   text-align:center;
   transition:0.4s ease;
 }
-.stat-box:hover{
+/* .stat-box:hover{
   transform:translateY(-8px);
-}
+} */
 .stat-box h2{
   font-size:72px;
   color:#c59b42;
@@ -415,6 +401,7 @@ STATS SECTION
 }
 .final-cta{
   width:100%;
+  height: auto;
   padding:150px 7%;
   background:
   linear-gradient(
@@ -464,6 +451,9 @@ STATS SECTION
   font-size:16px;
   line-height:1.8;
 }
+.visual-section{
+  background-color:#f0e2a4;
+}
 @media(max-width:1100px){
   .stats-section,
   .coverage-grid{
@@ -499,6 +489,6 @@ STATS SECTION
     font-size:20px;
   }
   .final-cta{
-    padding:110px 6%;
+  padding:110px 6%;
   }
 }
