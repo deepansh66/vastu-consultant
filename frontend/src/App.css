@@ -50,12 +50,6 @@ body {
   left: 0;
   transition: 0.3s;
 } */
-.nav-left {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-
-}
 .vastu-grid {
   display: flex;
   justify-content: center;
@@ -228,9 +222,6 @@ body {
   .dropdown-btn {
     width: 100%;
   }
-  .dropdown-content {
-    flex-direction: column;
-  }
   .dropdown-item {
     width: 100%;
     text-align: center;
@@ -262,7 +253,7 @@ body {
 }
 .logo-img {
   width: 50px;
-  margin-left: -100px;
+  /* margin-left: -100px; */
 }
 .navbar-logo-text{
   font-size:32px;
@@ -287,16 +278,25 @@ body {
   position:relative;
   font-size: 18px;
 }
-.nav-link.active {
+/* .nav-link.active {
   color: white;
-} 
+}  */
 .nav-link:hover::after {
   width: 100%;
+  color:white;
 }
 .nav-link:hover {
   color: rgb(4, 4, 4); 
 }
-@media (max-width: 768px) {
+@media (max-width:768px){
+
+  .navbar{
+    padding:15px 5%;
+  }
+
+  .navbar-brand-text{
+    font-size:22px;
+  }
   .hamburger {
     display: block;
   }
@@ -383,7 +383,8 @@ body {
 }
 .appointment-right {
   flex: 1;
-  min-width: 320px;
+  min-width: 0px;
+  width:100px;
 }
 .appointment-form {
   background: rgba(255,255,255,0.82);
@@ -437,15 +438,6 @@ body {
   transform: translateY(-3px);
 }
 /* RESPONSIVE */
-@media (max-width: 992px) {
-  .appointment-section {
-    flex-direction: column;
-    gap: 60px;
-  }
-  .appointment-left h1 {
-    font-size: 52px;
-  }
-}
 @media (max-width: 768px) {
   .appointment-section {
     padding: 90px 6%;
@@ -471,7 +463,7 @@ body {
     padding: 24px;
   }
 }.nav-link.active {
-  color: rgb(16, 17, 17);   
+  color: white;   
 }
 .register-link {
   color: #b88932;
