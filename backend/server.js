@@ -1,11 +1,19 @@
 require("dotenv").config();
-require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 const otpRoutes = require("./routes/otp");
 const cors = require("cors");
 const app = express();
-app.use(cors());
+app.use(
+  cors({
+    origin: [
+      "http://localhost:5173",
+      "https://ecovastuspaces.com",
+      "https://www.ecovastuspaces.com",
+    ],
+    credentials: true,
+  })
+);
 app.use(express.json());
 mongoose.connect(process.env.MONGO_URI)
 .then(() => {
@@ -52,8 +60,7 @@ app.use(
 app.get("/", (req, res) => {
   res.send("Backend Working");
 });
-app.listen(5000, () => {
-  console.log(
-    "Server running on port 5000"
-  );
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });

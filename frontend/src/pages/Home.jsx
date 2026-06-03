@@ -23,12 +23,10 @@ function Home() {
   <section className="split-section">
     <div className="split-block">
       <h1 className="split-title">
-        Pre-<span>Construction</span>
+        I'm planning to build as per Vastu
       </h1>
        <p className="split-desc">
-        Vastu integrated at the design stage costs nothing extra
-        and changes everything. Before a single brick is laid —
-        we get it right.
+        → Help me plan it right
       </p>
       <button
         className="dropdown-btn"
@@ -77,11 +75,10 @@ function Home() {
   <section className="split-section post-section">
     <div className="split-block post-block">
       <h1 className="split-title">
-        Post-<span>Construction</span>
+        My property is built-up
       </h1> 
       <p className="split-desc">
-        Already built does not mean already fixed. 
-        We assess what your space can still become.
+       → Show me what can be improved
       </p>
       <button
         className="dropdown-btn"

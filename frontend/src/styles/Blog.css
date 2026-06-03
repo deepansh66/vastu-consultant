@@ -169,27 +169,16 @@
 }
 
 .blog-button{
-
   display:inline-flex;
-
   align-items:center;
-
   justify-content:center;
-
   background:#C9A96E;
-
   color:#111827;
-
   text-decoration:none;
-
   padding:18px 34px;
-
   border-radius:10px;
-
   font-weight:600;
-
   transition:0.3s ease;
-
 }
 
 .blog-button:hover{
