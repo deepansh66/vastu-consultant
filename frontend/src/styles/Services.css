@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;1,400&family=DM+Sans:wght@400;500;700&display=swap');
-/* MAIN SECTION */
 .services-section {
   width: 100%;
   padding: 120px 7%;
@@ -135,7 +134,6 @@
     font-size: 48px;
   }
 }
-/* IMAGE */
 .service-image {
  position: relative;
  width: 100%;

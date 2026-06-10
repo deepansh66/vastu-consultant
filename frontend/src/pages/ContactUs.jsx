@@ -20,10 +20,10 @@ const [formData,setFormData] =
   async(e)=>{
     e.preventDefault();
     try{
-      const response =
+      const response = 
       await axios.post(
-        "https://vastu-consultant.onrender.com/api/contactus", 
-        formData
+        "https://vastu-consultant.onrender.com/api/contact", 
+        formData 
       );
       alert(response.data.message);
       setFormData({

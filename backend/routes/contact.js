@@ -42,26 +42,20 @@ router.post("/", async(req,res)=>{
       subject:"Enquiry Received",
       html:`
         <h2>EcoVastu Spaces</h2>
-        <p>
-          Hello ${name},
-        </p>
-        <p>
-          We have received your enquiry.
-        </p>
-        <p>
-          Our team will contact you shortly.
-        </p>
+        <p>Hello ${name},</p>
+        <p>We have received your enquiry.</p>
+        <p>Our team will contact you shortly.</p>
       `
     });
     res.status(200).json({
-      message:"Enquiry Sent Successfully"
+    message:"Enquiry Sent Successfully"
     });
   }
   catch(error){
     console.log(error);
     res.status(500).json({
-      message:error.message
-    });
-  }
+    message:error.message
+});
+}
 });
 module.exports = router;

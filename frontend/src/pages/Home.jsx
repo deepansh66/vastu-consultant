@@ -160,12 +160,12 @@ function Home() {
     <p>Family Legacy Since</p>
   </div>
   <div className="stat-box">
-    <h2>500+</h2>
+    <h2>3500+</h2>
     <p>Projects Completed</p>
   </div>
   <div className="stat-box">
-    <h2>3</h2>
-    <p>Cities, One Team</p>
+    <h2>1000+</h2>
+    <p>Vastu Consultations</p>
   </div>
 </section>
 <section className="how-section">
