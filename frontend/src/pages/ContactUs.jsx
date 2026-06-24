@@ -23,8 +23,9 @@ const [formData,setFormData] =
       const response = 
       await axios.post(
         "https://vastu-consultant.onrender.com/api/contact", 
-        formData 
-      );
+        formData, 
+      {timeout: 30000}
+    ); 
       alert(response.data.message);
       setFormData({
         name:"",
@@ -58,7 +59,7 @@ const [formData,setFormData] =
         {/* LEFT */}
         <div className="contact-left">
           <div className="contact-card">
-            <h3>WhatsApp</h3>
+            <h3>WhatsApp</h3> 
             <p>+91 77107 88800</p>
           </div>
           <div className="contact-card">

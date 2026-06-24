@@ -32,8 +32,8 @@ export default function EcoVastuAbout() {
               Spaces designed with
               <span> clarity </span>
               from the very beginning.
-            </h1>
-            <p>
+            </h1>  
+            <p> 
                 “We do not see Vastu, architecture, and interiors as separate services. At EcoVastu Spaces,
             every project is designed with a unified in-house approach — where clarity is maintained from planning to execution.”
             </p>
