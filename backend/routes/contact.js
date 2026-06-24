@@ -1,5 +1,6 @@
 const express = require("express");
 const router = express.Router();
+const transporter = require("../config/mail");
 
 router.post("/", async (req, res) => {
   try {
@@ -18,6 +19,22 @@ router.post("/", async (req, res) => {
       phone,
       message
     });
+
+    try {
+      await transporter.sendMail({
+        from: process.env.EMAIL_USER,
+        to: process.env.EMAIL_USER,
+        subject: "Test Email",
+        text: "Testing"
+      });
+
+      console.log("✅ Email Sent Successfully");
+
+    } catch (err) {
+
+      console.log("❌ EMAIL ERROR:", err);
+
+    }
 
     res.status(200).json({
       message: "Enquiry Sent Successfully"
