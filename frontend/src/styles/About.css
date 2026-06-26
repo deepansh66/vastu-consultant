@@ -63,12 +63,12 @@ p{
 .hero-left{
   max-width:760px;
 }
-/* .hero-left h1{
+.hero-left h1{
   font-size:96px;
   line-height:1.02;
   color:#e7dcdc;
   margin-bottom:34px;
-} */
+}
 .hero-left h1 span{
   color:#C9A96E;
   font-style:italic;

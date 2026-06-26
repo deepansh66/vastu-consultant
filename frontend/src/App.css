@@ -353,7 +353,7 @@ body {
 .appointment-left h1 {
   font-size: 72px;
   line-height: 1.05;
-  color: #111827;
+  color: white;
   margin-bottom: 28px;
   font-family: arial;
 }
@@ -363,7 +363,7 @@ body {
 .appointment-description {
   font-size: 19px;
   line-height: 1.9;
-  color: #1F2937;
+  color: white;
   max-width: 650px;
   margin-bottom: 40px;
 }
@@ -438,41 +438,107 @@ body {
   transform: translateY(-3px);
 }
 /* RESPONSIVE */
-@media (max-width: 768px) {
-  .appointment-section {
-    padding: 90px 6%;
+/* ===========================
+   APPOINTMENT RESPONSIVE
+=========================== */
+
+@media (max-width:992px){
+
+  .appointment-section{
+    flex-direction:column;
+    padding:90px 6%;
+    gap:50px;
+    background-attachment:scroll;
   }
-  .appointment-left h1 {
-    font-size: 42px;
+
+  .appointment-left,
+  .appointment-right{
+    width:100%;
+    max-width:100%;
   }
-  .appointment-description {
-    font-size: 16px;
+
+  .appointment-left{
+    text-align:center;
   }
-  .appointment-form {
-    padding: 30px;
+
+  .appointment-left h1{
+    font-size:52px;
   }
+
+  .appointment-description{
+    max-width:100%;
+    font-size:18px;
+  }
+
+  .appointment-features{
+    justify-content:center;
+  }
+
+  .appointment-form{
+    max-width:650px;
+    margin:auto;
+  }
+
 }
-@media (max-width: 480px) {
-  .appointment-left h1 {
-    font-size: 34px;
+
+@media (max-width:768px){
+
+  .appointment-section{
+    padding:70px 5%;
+    gap:40px;
   }
-  .feature-box {
-    width: 100%;
+
+  .appointment-left h1{
+    font-size:40px;
+    line-height:1.2;
   }
-  .appointment-form {
-    padding: 24px;
+
+  .appointment-description{
+    font-size:16px;
   }
-}.nav-link.active {
-  color: white;   
+
+  .appointment-features{
+    flex-direction:column;
+  }
+
+  .feature-box{
+    width:100%;
+    text-align:center;
+  }
+
+  .appointment-form{
+    padding:28px;
+  }
+
+  .appointment-form h2{
+    font-size:28px;
+  }
+
+  .appointment-form input,
+  .appointment-form select,
+  .appointment-form button{
+    padding:16px;
+    font-size:15px;
+  }
+
 }
-.register-link {
-  color: #b88932;
-  font-weight: 600;
-  margin-left: 6px;
-  cursor: pointer;
-  transition: 0.3s ease;
-}
-.register-link:hover {
-  color: #9d7528;
-  text-decoration: underline;
+
+@media (max-width:480px){
+
+  .appointment-section{
+    padding:60px 4%;
+  }
+
+  .appointment-left h1{
+    font-size:32px;
+  }
+
+  .appointment-description{
+    font-size:15px;
+  }
+
+  .appointment-form{
+    padding:22px;
+  }
+
 }
