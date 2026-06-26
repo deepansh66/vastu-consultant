@@ -22,7 +22,7 @@ const [formData,setFormData] =
     try{
       const response = 
       await axios.post(
-        `${import.meta.env.VITE_API_URL}/api/payment/create-order`, 
+        "https://vastu-consultant-backend.vercel.app/api/contact", 
         formData, 
       {timeout: 30000}
     ); 

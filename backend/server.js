@@ -41,7 +41,8 @@ app.use(
     origin: [
       "http://localhost:5173",
       "https://ecovastuspaces.com",
-      "https://www.ecovastuspaces.com"
+      "https://www.ecovastuspaces.com",
+      "https://vastu-consultant-backend.vercel.app/"
     ],
     credentials: true
   })
