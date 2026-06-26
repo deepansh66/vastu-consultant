@@ -383,7 +383,7 @@ body {
 }
 .appointment-right {
   flex: 1;
-  min-width: 0px;
+  min-width: 320px;
   width:100px;
 }
 .appointment-form {

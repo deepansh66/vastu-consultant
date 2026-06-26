@@ -22,7 +22,7 @@ const [formData,setFormData] =
     try{
       const response = 
       await axios.post(
-        "http://localhost:5000/api/contact", 
+        `${import.meta.env.VITE_API_URL}/api/payment/create-order`, 
         formData, 
       {timeout: 30000}
     ); 

@@ -58,7 +58,7 @@ export default function EcoVastuAbout() {
           </div>
         </section>
         
-        <section className="stats-reveal">
+        <section className="stats-reveal reveal">
 
           <div className="stat-box">
             <h2>55<span>+</span></h2>
