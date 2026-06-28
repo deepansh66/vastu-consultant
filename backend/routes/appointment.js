@@ -19,7 +19,7 @@ router.post("/", async (req, res) => {
       subject: "Appointment Confirmation - EcoVastu Spaces",
       html: `
         <h2>Appointment Confirmed</h2>
-
+      
         <p>Hello <strong>${req.body.name}</strong>,</p>
 
         <p>Thank you for booking your consultation with <strong>EcoVastu Spaces</strong>.</p>
