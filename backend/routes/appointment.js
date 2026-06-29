@@ -6,7 +6,7 @@ const transporter = require("../config/mail");
 
 router.post("/", async (req, res) => {
   try {
-    // Save Appointment
+      // Save Appointment
     const appointment = new Appointment(req.body);
     await appointment.save();
 

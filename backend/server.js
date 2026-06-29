@@ -15,23 +15,31 @@ const otpRoutes = require("./routes/otp");
 const app = express();
 
 // Connect MongoDB only once
-let isConnected = false;
+let cached = global.mongoose;
+
+if (!cached) {
+  cached = global.mongoose = {
+    conn: null,
+    promise: null,
+  };
+}
 
 async function connectDB() {
-  if (isConnected) return;
-
-  try {
-    await mongoose.connect(process.env.MONGO_URI);
-
-    isConnected = true;
-
-    console.log("✅ MongoDB Connected");
-
-  } catch (err) {
-
-    console.log(err);
-
+  if (cached.conn) {
+    return cached.conn;
   }
+
+  if (!cached.promise) {
+    cached.promise = mongoose.connect(process.env.MONGO_URI, {
+      bufferCommands: false,
+    });
+  }
+
+  cached.conn = await cached.promise;
+
+  console.log("✅ MongoDB Connected");
+
+  return cached.conn;
 }
 
 connectDB();
@@ -49,15 +57,15 @@ app.use(
 
 app.use(express.json());
 
-app.use((req, res, next) => {
-  console.log(req.method, req.url);
-  next();
+app.use(async (req, res, next) => {
+  try {
+    await connectDB();
+    next();
+  } catch (err) {
+    console.error("Database connection failed:", err);
+    res.status(500).json({ message: "Database connection failed" });
+  }
 });
-
-app.get("/", (req, res) => {
-  res.send("Backend Working");
-});
-
 app.use("/api/contact", contactRoutes);
 app.use("/api/payment", paymentRoutes);
 app.use("/api/auth", authRoutes);
